@@ -1,0 +1,75 @@
+.create-todo {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+}
+.notification-message {
+    background:linear-gradient(rgb(48, 127, 154) 80%,rgb(241, 239, 239));
+    position: absolute;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    top: 0;
+    left: 1rem;
+    width: 15rem;
+    height: 4rem;
+    font-weight: 900;
+    padding-left: 10px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(206, 218, 221);
+}
+
+.time-reducing{
+    background-color:black;
+    width: 90%;
+    height: 8%;
+    margin-top: 1rem;
+    margin-left: -0.5rem;
+    animation: time 3s ease;
+}
+@keyframes time {
+    0% {
+        width: 90%;
+    }
+    100%{
+        width:0
+    }
+}
+h1{
+    font-size: 3rem;
+    font-style: italic;
+    text-decoration:underline;
+    margin-bottom: 4rem;
+}
+
+input{
+    font-size: 2rem;
+    width: 60%;
+    height: 10vh;
+    background-color:lightblue;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+input:focus{
+    background-color: rgb(136, 192, 210);
+}
+
+button{
+    height: 3rem;
+    width:7rem;
+    margin-top: 2%;
+    border-radius: 15px;
+    background-color: rgb(64, 200, 245);
+    cursor: pointer;
+    font-weight: 900;
+}
+button:active{
+    background-color: rgb(41, 169, 233);
+}
+
